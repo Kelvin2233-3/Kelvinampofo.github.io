@@ -1,0 +1,55 @@
+<main>
+    <h2>Get In Touch With Ampofo's Sanitation Solutions</h2>
+
+    <section>
+        <h3>Our Office Location</h3>
+        <address>
+            <p><strong>Ampofo's Sanitation Solutions Inc. Headquarters</strong></p>
+            <p>Hill Scholars School, GT-289-5748</p>
+            <p> Tema West Municipal District, GH</p>
+            <p>Phone: <a href="tel:0208338551">(020) 833-8551</a> | Email: <a href="mailto:ampofokelvin5@.com">ampofokelvin5@.com</a></p>
+        </address>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!..." width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section>
+        <h3>Request a Service Call or Quote</h3>
+        <form action="process_contact.php" method="POST">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <p>
+                    <label for="cname">Name:</label>
+                    <input type="text" id="cname" name="cname" required>
+                </p>
+                <p>
+                    <label for="cphone">Phone:</label>
+                    <input type="tel" id="cphone" name="cphone" required>
+                </p>
+                <p>
+                    <label for="cemail">Email:</label>
+                    <input type="email" id="cemail" name="cemail" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Service Inquiry</legend>
+                <p>
+                    <label for="service_type">Type of Service Needed:</label>
+                    <select id="service_type" name="service_type" required>
+                        <option value="">-- Select One --</option>
+                        <option value="residential">Residential Pickup</option>
+                        <option value="commercial">Commercial/Dumpster Quote</option>
+                        <option value="bulk">Bulk Item Removal</option>
+                        <option value="general">General Question</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="message">Your Message/Details:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </p>
+                <button type="submit">Send Inquiry</button>
+            </fieldset>
+        </form>
+    </section>
+</main>
